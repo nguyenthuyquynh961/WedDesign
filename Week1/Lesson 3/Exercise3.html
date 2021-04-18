@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<form id="surveyForm">
+<h1>Application for permission to date my daughter</h1>
+<p>
+<b>Note:</b> Form is to be completed at least 21 days prior to date
+</p>
+<fieldset>
+ <legend>Personal Details</legend>
+  <p>
+   <label for="name" id="name">Name:</label>
+   <input type="text" id="name" name="username" placeholder="Enter name here">
+  </p>
+  <p>
+   <label for="address" id="address">Address:</label>
+   <input type="text" id="address" placeholder="Enter address here">
+  </p>
+  <p>
+   <label id="email">Email:</label>
+   <input type="email" id="email" placeholder="Enter email here">
+  </p>
+  <p>
+   <label id="phone">Phone Number:</label>
+   <input type="number" id="phone" placeholder="Enter 10 digit number" max="10">
+  </p>
+  <p>
+   <label id="iq">IQ:</label>
+   <input type="number" id="iq" placeholder="Enter IQ here">
+  </p>
+  <p>
+   <label id="gender">Gender</label></br>
+  <input type="radio" id="male" name="gender" value="male"/>
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female"/>
+   <label for="female">Female</label>
+    <input type="radio" id="other" name="gender"/>
+   <label for="other">Other</label>
+  </p>
+  <p>
+   <label>Date of Proposed Outing:</label>
+   <input type="date" name="bday">
+  </p>
+  
+</fieldset>
+<fieldset>
+<label>Check All That Apply</label>
+<p>
+ <input type="checkbox" name="tattoos" value="tattoos">
+  I have tattoos and/or piercings</br>
+ 
+ <input type="checkbox" name="tuoi" value="tuoi">
+  I'm more than 2 year older than my daughter</br>
+  
+  <input type="checkbox" name="car" value="car">
+  I own a panel van or V8 ute</br>
+  
+  <input type="checkbox" name="work" value="work">
+  I work full-time</br>
+  
+  <input type="checkbox" name="rich" value="rich">
+  My parents are rich</br>
+  
+  <input type="checkbox" name="location" value="location">
+  Is the date at a well lit public location</br>
+</p>
+</fieldset>
+<fieldset>
+<p>
+ <label>Political Persuasion</label>
+ <input list="items" />
+ <datalist id="items">
+  <option>Left Wing</option>
+  <option>Right Wing</option>
+  <option>Conservative</option>
+  <option>Nazi</option>
+ </datalist>
+ 
+ <label>Education Level</label>
+ <input list="items" />
+ <datalist id="items">
+  <option>University</option>
+  <option>College</option>
+  <option>High School</option>
+  <option>None</option>
+ </datalist>
+</p>
+</fieldset>
+<fieldset>
+ <legend>Essay Section</legend>
+ <div>
+ <label for="msg">In 50 words or more explain why you want to date my daughter</label></br>
+ <textarea placeholder="Enter Text Here" cols="50" rows="5"></textarea>
+ </div>
+ <div>
+ <label for="msg">Please upload contact details for 2 references</label></br>
+ <textarea placeholder="Enter Text Here" cols="50" rows="5"></textarea>
+ </div>
+ <p>
+ <label>Upload Police Clearance Certificate, Bank Statement and Medical Certifiates here:</label>
+ <input type="file">
+ </p>
+</fieldset>
+<button type="submit">Send your application</button>
+</form>
+</body>
+</html>

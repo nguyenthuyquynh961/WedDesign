@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<form id="orderForm">
+<h1 style="color:purple">A Simple Form</h1>
+<h2 style="color:#FF4E5D">Form fundamental</h2>
+<fieldset>
+ <legend>Customer Info</legend>
+  <p>
+  <label for="fullname"> Name:</label>
+  <input id="fullname" name="name" type="text" autofocus size="50" placeholder="Enter your name">
+  </p>
+  <p>
+  <label for="phone">Telephone:</label>
+  <input id="phone" name="telephone" type="number" placeholder="Patterm: 1-234-567-8910">
+  </p>
+  <p>
+  <label for="email">Email address:</label>
+  <input id="email" name="email" type="text" placeholder="Enter your email address" size="50" >
+  </p>
+  <p>
+  <input type="radio" id="male" name="gender" value="male"/>
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female"/>
+   <label for="female">Female</label>
+  </p>	
+  <p>
+  <label for="hobbies">Hobbies:</label>
+  <input type="checkbox" id="check1" name="chechbox1"/>
+  <label for="badminton">Badminton</label>
+  <input type="checkbox" id="check2" name="chechbox2"/>
+  <label for="football">Football</label>
+  <input type="checkbox" id="check3" name="chechbox3"/>
+  <label for="basketball">Basketball</label>
+  </p>
+</fieldset>
+<fieldset>
+ <legend>Books</legend>
+ <p>
+  <label for="fullname"> Name:</label>
+  <input id="fullname" name="name" type="text">
+  <label for="quantity">Quantity(Maximum 5):</label>
+ <input type="number" min="1" max="5">
+ </p>
+
+</fieldset>
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+</form>
+</body>
+</html>

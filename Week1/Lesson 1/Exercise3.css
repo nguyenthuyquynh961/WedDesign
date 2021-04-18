@@ -3,8 +3,9 @@
 body{
 	margin:0px;
 	padding:0px;
+	border-collapse:collapse;
 	}
 div{
 	border:1px solid #000;
-	width:50%;
+	width:60%;
 	}
