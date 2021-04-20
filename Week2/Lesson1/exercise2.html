@@ -2,26 +2,13 @@
 <html>
 <head>
 	<title></title>
-	<script type="text/javascript">
-		// Hàm cộng hai số
-function tinh_tong()
-{
-    // Lấy thông tin từ người dùng
-    var a = parseInt(prompt("Nhập số a"));
-    var b = parseInt(prompt("Nhập số b"));
-     
-    // Tính tổng
-    var tong = a + b;
- 
-    // In ra màn hình
-    document.write("Tổng hai số " + a + " + " + b + " là " + tong);
-}
- 
-// Gọi hàm tính tổng
-tinh_tong();
-	</script>
 </head>
 <body>
-
+<script type="text/javascript">
+	var a,b;
+	a=prompt("Nhap so thu nhat: ");
+	b=prompt("Nhap so thu nhat: ");
+	document.write("Max la "+Math.max(a,b));
+</script>
 </body>
 </html>
