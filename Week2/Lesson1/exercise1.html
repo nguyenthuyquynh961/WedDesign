@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function Tinhtong(){
+		var a=document.getElementById('soa');
+		var b=document.getElementById('sob');
+		//tinh tong
+		var tong=Number(a.value)+Number(b.value);
+		//xuat cho bien
+		var kq=document.getElementById('ketqua');
+		kq.value=tong;
+	}
+	function Tinhhieu(){
+		var a=document.getElementById('soa');
+		var b=document.getElementById('sob');
+		//tinh tong
+		var hieu=Number(a.value)-Number(b.value);
+		//xuat cho bien
+		var kq=document.getElementById('ketqua');
+		kq.value=hieu;
+	}
+	function Tinhtich(){
+		var a=document.getElementById('soa');
+		var b=document.getElementById('sob');
+		//tinh tong
+		var tich=Number(a.value)*Number(b.value);
+		//xuat cho bien
+		var kq=document.getElementById('ketqua');
+		kq.value=tich;
+	}
+	function Tinhthuong(){
+		var a=document.getElementById('soa');
+		var b=document.getElementById('sob');
+		//tinh tong
+		var thuong=Number(a.value)/Number(b.value);
+		//xuat cho bien
+		var kq=document.getElementById('ketqua');
+		kq.value=thuong;
+	}
+	function Tinhthuong1(){
+		var a=document.getElementById('soa');
+		var b=document.getElementById('sob');
+		//tinh tong
+		var thuong=Number(a.value)%Number(b.value);
+		//xuat cho bien
+		var kq=document.getElementById('ketqua');
+		kq.value=thuong;
+	}
+
+	</script>
+</head>
+<body style="font-family: arial; background-color: lavender">
+<h1>Nhập phép tính:</h1>
+<table>
+	<tr>
+		<td>Nhập số a:</td>
+		<td><input type="text" id="soa"></td>
+	</tr>
+	<tr>
+		<td>Nhập số b:</td>
+		<td><input type="text" id="sob"></td>
+	</tr>
+	<tr>
+		<td>Kết quả:</td>
+		<td><input type="text" id="ketqua"></td>
+	</tr>
+	<tr>
+		<td colspan="2"><input type="Button" value="Tính tổng" onclick="Tinhtong();"></td>
+	</tr>
+	<tr>
+		<td colspan="2"><input type="Button" value="Tính hiệu" onclick="Tinhhieu();"></td>
+	</tr>
+	<tr>
+		<td colspan="2"><input type="Button" value="Tính tích" onclick="Tinhtich();"></td>
+	</tr>
+	<tr>
+		<td colspan="2"><input type="Button" value="Tính thương" onclick="Tinhthuong();"></td>
+	</tr>
+	<tr>
+		<td colspan="2"><input type="Button" value="Modulo" onclick="Tinhthuong1();"></td>
+	</tr>
+</table>
+</script>
+</body>
+</html>
