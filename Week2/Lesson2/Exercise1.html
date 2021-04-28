@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script>
+		function giaithua()
+		{
+			var x =document.getElementById('so').value;
+			var gt = 1;
+			for(var i=1;i<=x;i++)
+			{
+				gt*=i;
+			}
+			var html ='<div>'+ x + "! = " + gt +'</div>' ;
+			document.getElementById('result').insertAdjacentHTML('afterend',html);
+		}
+	</script>
+</head>
+
+<body>
+	<div><h3>Tìm Giai Thừa</h3></div>
+	<form>
+		<label>Nhập vào hệ số giai thừa :<br><input type="number" id="so" value="" required></label>
+		<input type="button" onClick="giaithua()" value="Tính giai thừa">
+		<div id="result"></div>
+	</form>
+</body>
+</html>
